@@ -10,16 +10,15 @@ public class CAppli {
 	//Methods
 	public CAppli() {	//init
 		panneauDAffichage();
-		frame =  new CFrame();
+		frame =  new CFrame();	//Init rateMine sizeOfMatrice : asked to the user
 		sc = new Scanner(System.in);
-		
-		
 	}
 	
 	public void Run() {	//running
-		Define.print("");
-		frame.DefSize();		//Definition de la taille de la matrice
-		frame.DefRateMine();	//Definition du taux de présence des mines
+		//Define.print("y : "+frame.getMatrice().length);
+		//Define.print("x :"+frame.getMatrice()[0].length);
+		//frame.getMatrice()[2][2].setValue(2);
+		frame.Draw(false);
 	}
 	
 	public static CPoint AskPos(String msgX,String msgY,Scanner sc) {

@@ -7,7 +7,7 @@ class :
 	CFrame		//contient les blocks, la matrice,les methodes d'affichage
 		Integer xMax
 		Integer yMax
-		CBlock matrice[nbCol(x)][nbRow(y)]  //tableau de CBlock a double entrées 
+		CBlock matrice[nbRow(x)][nbCol(y)]  //tableau de CBlock a double entrées 
 		
 		Print()								//Affichage de la matrice dans la console
 		AskSizeFrame();	//Demamnde a l'utilisatur la taille de la matrice.
@@ -40,5 +40,9 @@ class :
 		Integer x
 		Integer y
 		
-			
+	j--	  		j	        j++
+	
+i--	[i--][j--]  [i--][j] [i--][j++]		
+i	 [i][j--] 	 [i][j]   [i][j++]	
+i++	[i++][j--]  [i++][j] [i++][j++]
 	

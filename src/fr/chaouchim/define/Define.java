@@ -16,6 +16,9 @@ public class Define {
 	public static void print(Integer pa) {
 		print(pa.toString(),false);
 	}
+	public static void print(Integer pa,boolean b) {
+		print(pa.toString(),b);
+	}
 	//----------------------------------------------------//
 
 }
